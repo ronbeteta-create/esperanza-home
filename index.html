@@ -199,30 +199,32 @@
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Build a gallery from local /img files, trying multiple extensions and up to 40 images.
-    const gallery = document.getElementById('galleryGrid');
+// Build a gallery from local /img files named numerically (1.jpg, 2.jpg, etc.)
+const gallery = document.getElementById('galleryGrid');
 
-    // Try multiple file extensions in case files were uploaded as .JPG, .jpeg, .png, or .webp
-    const EXTS = ['jpg','jpeg','JPG','JPEG','png','PNG','webp','WEBP'];
+// Supported extensions to try
+const exts = ['jpg','jpeg','JPG','JPEG','png','PNG','webp','WEBP'];
 
-    function tryLoad(srcs, onSuccess){
-      if(srcs.length === 0) return; 
-      const src = srcs.shift();
-      const img = new Image();
-      img.loading = 'lazy';
-      img.className = 'rounded-2xl shadow-soft w-full h-64 object-cover';
-      img.onload = () => onSuccess(img);
-      img.onerror = () => tryLoad(srcs, onSuccess);
-      img.src = src;
-    }
+function tryLoad(srcs, onSuccess) {
+  if (srcs.length === 0) return;
+  const src = srcs.shift();
+  const img = new Image();
+  img.loading = 'lazy';
+  img.className = 'rounded-2xl shadow-soft w-full h-64 object-cover';
+  img.onload = () => onSuccess(img);
+  img.onerror = () => tryLoad(srcs, onSuccess);
+  img.src = src;
+}
 
-    function addImage(n){
-      const candidates = EXTS.map(ext => `img/${n}.`+ext);
-      tryLoad(candidates, (img) => gallery.appendChild(img));
-    }
+function addImage(n) {
+  const candidates = exts.map(ext => `img/${n}.` + ext);
+  tryLoad(candidates, img => gallery.appendChild(img));
+}
 
-    // Attempt 1..40 images
-    for(let i=1;i<=40;i++){ addImage(i); }
+// Attempt images numbered 1..40
+for (let i = 1; i <= 40; i++) {
+  addImage(i);
+}
 
     // Set hero cover image with flexible extensions
     (function setHero(){
