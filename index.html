@@ -206,18 +206,18 @@ const gallery = document.getElementById('galleryGrid');
 const exts = ['jpg','jpeg','JPG','JPEG','png','PNG','webp','WEBP'];
 
 function tryLoad(srcs, onSuccess) {
-  if (srcs.length === 0) return;
+  if (srcs.length == 0) return;
   const src = srcs.shift();
   const img = new Image();
-  img.loading = 'lazy';
-  img.className = 'rounded-2xl shadow-soft w-full h-64 object-cover';
+  img.loading = "lazy";
+  img.className = "rounded-2xl shadow-soft w-full h-64 object-cover";
   img.onload = () => onSuccess(img);
   img.onerror = () => tryLoad(srcs, onSuccess);
   img.src = src;
 }
 
 function addImage(n) {
-  const candidates = exts.map(ext => `img/${n}.` + ext);
+  const candidates = exts.map(ext => 'img/${n}.' + ext);
   tryLoad(candidates, img => gallery.appendChild(img));
 }
 
