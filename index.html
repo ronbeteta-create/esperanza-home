@@ -199,6 +199,41 @@
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
+// Build a gallery from local /img files
+const gallery = document.getElementById('galleryGrid');
+
+// Supported extensions
+const exts = ['jpg','jpeg','JPG','JPEG','png','PNG','webp','WEBP'];
+
+// Re-using the existing tryLoad function...
+function tryLoad(srcs, onSuccess) {
+    if (srcs.length == 0) return;
+    const src = srcs.shift();
+    const img = new Image();
+    img.onload = () => onSuccess(img);
+    img.onerror = () => tryLoad(srcs, onSuccess);
+    img.src = src;
+}
+
+// New function to add images to the gallery
+function displayGallery() {
+  for (let i = 1; i <= 40; i++) {
+    const galleryItem = document.createElement('div');
+    galleryItem.className = "rounded-2xl shadow-soft w-full h-64 object-cover bg-cover bg-center";
+    galleryItem.setAttribute("loading", "lazy");
+
+    const coverCandidates = exts.map(ext => `img/${i}.` + ext);
+    tryLoad([...coverCandidates], (img) => {
+      galleryItem.style.backgroundImage = `url('${img.src}')`;
+      gallery.appendChild(galleryItem);
+    });
+  }
+}
+
+// Run the function to display the gallery
+displayGallery();
+
+/*    
 // Build a gallery from local /img files named numerically (1.jpg, 2.jpg, etc.)
 const gallery = document.getElementById('galleryGrid');
 
@@ -227,7 +262,7 @@ function addImage(n) {
 for (let i = 1; i <= 40; i++) {
   addImage(i);
 }
-
+*/
     // Set hero cover image with flexible extensions
     (function setHero(){
       const hero = document.querySelector('.hero-img');
