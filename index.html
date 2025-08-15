@@ -217,7 +217,9 @@ function tryLoad(srcs, onSuccess) {
 }
 
 function addImage(n) {
-  const candidates = exts.map(ext => 'img/${n}.' + ext);
+  //const candidates = exts.map(ext => 'img/${n}.' + ext);
+  //tryLoad(candidates, img => gallery.appendChild(img));
+  const candidates = exts.map(ext => `img/${n}.${ext}`);
   tryLoad(candidates, img => gallery.appendChild(img));
 }
 
