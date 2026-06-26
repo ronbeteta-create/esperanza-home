@@ -3,300 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Esperanza Home | Vacation Rental in Gonzales, Louisiana | Near Baton Rouge</title>
-  <meta name="description" content="Spacious 3-bedroom vacation rental in Gonzales, Louisiana near Tanger Outlets, Lamar-Dixon Expo Center, Baton Rouge, and LSU. Book through Airbnb or VRBO." />
+  <title>The Esperanza Home | Vacation Rental in Gonzales, Louisiana</title>
+  <meta name="description" content="The Esperanza Home is a beautifully furnished 3-bedroom vacation rental in Gonzales, Louisiana near Baton Rouge, Tanger Outlets, LSU, and Lamar-Dixon Expo Center. Book through Airbnb or VRBO." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html{scroll-behavior:smooth;}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
-    .hero-img{background-image:url('img/cover.jpg');}
-    .shadow-soft{box-shadow:0 10px 25px rgba(0,0,0,.08)}
-    .ring-muted{box-shadow:0 0 0 1px rgba(0,0,0,.06) inset}
-    .anim{transition:all .18s ease}
-    .anim:hover{transform:translateY(-2px)}
-    .container{max-width:1100px;margin-inline:auto;padding-inline:1rem}
-    .hide{display:none}
+    :root{--navy:#0d1a24;--navy2:#07121a;--copper:#c57445;--copper2:#e18a53;--cream:#f5eee7;--line:rgba(197,116,69,.35)}
+    html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:radial-gradient(circle at 20% 5%,rgba(197,116,69,.10),transparent 32%),linear-gradient(180deg,var(--navy),var(--navy2));color:var(--cream)}
+    .serif{font-family:"Cormorant Garamond",serif}.container{max-width:1180px;margin-inline:auto;padding-inline:1.25rem}.shadow-soft{box-shadow:0 18px 40px rgba(0,0,0,.28)}.copper{color:var(--copper2)}.line{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}.anim{transition:all .2s ease}.anim:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(135deg,var(--copper),var(--copper2));color:#fff}.btn-outline{border:1px solid var(--copper);color:var(--cream)}.btn-outline:hover{background:rgba(197,116,69,.12)}.card{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);box-shadow:0 16px 35px rgba(0,0,0,.18)}
+    .hero-img{background-image:linear-gradient(90deg,rgba(7,18,26,.98) 0%,rgba(7,18,26,.88) 32%,rgba(7,18,26,.45) 68%,rgba(7,18,26,.22) 100%),url('img/cover.jpg');background-size:cover;background-position:center}.section-title{font-family:"Cormorant Garamond",serif;color:var(--copper2);letter-spacing:.02em}.gallery-tile{min-height:230px;background-size:cover;background-position:center;border:1px solid rgba(255,255,255,.08)}
+    @media(max-width:768px){.hero-img{background-image:linear-gradient(180deg,rgba(7,18,26,.90),rgba(7,18,26,.70)),url('img/cover.jpg')}}
   </style>
 </head>
-<body class="text-slate-800 bg-slate-50">
-  <!-- Topbar -->
-  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
-    <div class="container flex items-center justify-between py-3">
-      <a href="#top" class="flex items-center gap-2 font-semibold text-slate-900">
-        <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-white">🏡</span>
-        <span>The Esperanza Home</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#about" class="hover:text-slate-900 text-slate-600">About</a>
-        <a href="#amenities" class="hover:text-slate-900 text-slate-600">Amenities</a>
-        <a href="#nearby" class="hover:text-slate-900 text-slate-600">Nearby</a>
-        <a href="#gallery" class="hover:text-slate-900 text-slate-600">Gallery</a>
-        <a href="#location" class="hover:text-slate-900 text-slate-600">Location</a>
-        <a href="#contact" class="hover:text-slate-900 text-slate-600">Contact</a>
-      </nav>
-      <div class="flex items-center gap-2">
-        <a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="hidden sm:inline-flex items-center px-4 py-2 rounded-xl bg-slate-900 text-white text-sm font-medium anim">Book on Airbnb</a>
-        <a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="hidden sm:inline-flex items-center px-4 py-2 rounded-xl bg-white text-slate-900 text-sm font-medium border border-slate-200 anim">VRBO</a>
-      </div>
+<body>
+  <header class="sticky top-0 z-50 bg-[#07121a]/90 backdrop-blur border-b border-white/10">
+    <div class="container flex items-center justify-between py-4">
+      <a href="#top" class="flex items-center gap-3"><img src="img/logo.jpg" alt="The Esperanza Home Logo" class="h-14 w-auto object-contain" onerror="this.style.display='none'"><div class="leading-tight"><div class="serif text-2xl text-[#f5eee7]">The Esperanza</div><div class="text-[11px] tracking-[.35em] copper uppercase">Home</div></div></a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-slate-200"><a href="#about" class="hover:text-[#e18a53]">About</a><a href="#amenities" class="hover:text-[#e18a53]">Amenities</a><a href="#gallery" class="hover:text-[#e18a53]">Gallery</a><a href="#nearby" class="hover:text-[#e18a53]">Nearby</a><a href="#location" class="hover:text-[#e18a53]">Location</a><a href="#contact" class="hover:text-[#e18a53]">Contact</a></nav>
+      <div class="hidden sm:flex items-center gap-3"><a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="px-5 py-3 rounded-sm btn-primary text-sm font-semibold anim">Book on Airbnb</a><a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="px-5 py-3 rounded-sm btn-outline text-sm font-semibold anim">VRBO</a></div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="top" class="relative">
-    <div class="hero-img relative h-[62vh] min-h-[480px] bg-center bg-cover">
-      <div class="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent"></div>
-      <div class="container absolute bottom-10">
-        <div class="bg-white/70 backdrop-blur rounded-3xl p-6 md:p-8 shadow-soft max-w-2xl">
-          <p class="uppercase tracking-widest text-xs text-slate-600">Short‑Term Rental · Gonzales, LA</p>
-          <h1 class="text-3xl md:text-5xl font-semibold leading-tight text-slate-900">Your Home Away From Home in Gonzales</h1>
-          <p class="mt-3 text-slate-700">A beautifully furnished 3-bedroom retreat minutes from Tanger Outlets, Lamar-Dixon Expo Center, LSU, and Baton Rouge.</p>
-          <div class="mt-5 flex flex-wrap gap-3">
-            <a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="inline-flex items-center px-5 py-3 rounded-2xl bg-slate-900 text-white font-medium anim">Book on Airbnb</a>
-            <a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="inline-flex items-center px-5 py-3 rounded-2xl bg-white border border-slate-200 text-slate-900 font-medium anim">View on VRBO</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="top" class="hero-img border-b border-white/10"><div class="container py-20 md:py-28"><div class="max-w-2xl"><div class="uppercase tracking-[.22em] text-sm copper font-semibold">Short-Term Rental • Gonzales, LA</div><h1 class="serif mt-5 text-5xl md:text-7xl leading-[.95] text-[#f5eee7]">Your Home Away From Home in Gonzales</h1><div class="mt-6 w-20 h-[2px] bg-[#e18a53]"></div><p class="mt-6 text-lg text-slate-100 leading-relaxed max-w-xl">A beautifully furnished 3-bedroom retreat minutes from Tanger Outlets, Lamar-Dixon Expo Center, LSU, and Baton Rouge.</p><div class="mt-8 grid grid-cols-2 sm:grid-cols-5 gap-5 max-w-2xl text-sm"><div><div class="copper text-2xl">👥</div><div>Sleeps 6</div></div><div><div class="copper text-2xl">🛏️</div><div>3 Bedrooms</div></div><div><div class="copper text-2xl">🛁</div><div>2 Bathrooms</div></div><div><div class="copper text-2xl">📶</div><div>Fast Wi‑Fi</div></div><div><div class="copper text-2xl">🚗</div><div>Free Parking</div></div></div><div class="mt-9 flex flex-wrap gap-4"><a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="inline-flex px-8 py-4 rounded-sm btn-primary font-semibold anim">Book on Airbnb</a><a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="inline-flex px-8 py-4 rounded-sm btn-outline font-semibold anim">View on VRBO</a></div></div></div></section>
 
-  <!-- About -->
-  <section id="about" class="container py-14">
-    <div class="grid md:grid-cols-5 gap-8 items-start">
-      <div class="md:col-span-3">
-        <h2 class="text-2xl md:text-3xl font-semibold">About the Space</h2>
-        <p class="mt-4 text-slate-700 leading-relaxed">Whether you're visiting Gonzales for work, youth sports, LSU events, family gatherings, or simply exploring South Louisiana, The Esperanza Home offers a clean, spacious, and comfortable place to relax. Enjoy a fully equipped kitchen, fast Wi‑Fi, comfortable beds, outdoor seating, and everything needed for a stress-free stay.</p>
-        <p class="mt-3 text-slate-700 leading-relaxed">Layout: Primary king suite with ensuite bath, two additional bedrooms, in‑unit laundry, outside patio seating, and a grill is available.</p>
-      </div>
-      <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-soft ring-muted">
-        <h3 class="text-lg font-semibold">Key Details</h3>
-        <ul class="mt-3 space-y-2 text-slate-700">
-          <li>Self check‑in with smart lock</li>
-          <li>Fast Wi‑Fi</li>
-          <li>Central A/C & heat</li>
-          <li>Professionally cleaned</li>
-          <li>No parties. Quiet hours 10pm–8am</li>
-        </ul>
-        <div class="mt-5 flex gap-3">
-          <a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="inline-flex items-center px-4 py-2 rounded-xl bg-slate-900 text-white text-sm font-medium anim">Airbnb Details</a>
-          <a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="inline-flex items-center px-4 py-2 rounded-xl bg-white text-slate-900 text-sm font-medium border border-slate-200 anim">VRBO Details</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="about" class="container py-16"><div class="grid md:grid-cols-5 gap-10 items-start"><div class="md:col-span-3"><h2 class="section-title text-3xl md:text-4xl">About The Esperanza Home</h2><div class="mt-3 w-16 h-[2px] bg-[#e18a53]"></div><p class="mt-6 text-slate-200 leading-relaxed">Whether you're visiting Gonzales for work, youth sports, LSU events, family gatherings, or simply exploring South Louisiana, The Esperanza Home offers a clean, spacious, and comfortable place to relax.</p><p class="mt-4 text-slate-200 leading-relaxed">Enjoy a fully equipped kitchen, fast Wi‑Fi, comfortable beds, outdoor seating, and everything needed for a stress-free stay.</p><div class="mt-8 pt-7 border-t border-white/10 grid grid-cols-2 sm:grid-cols-5 gap-6 text-center text-xs"><div><div class="text-2xl copper">🔐</div><div class="mt-2">Self Check-In<br>Smart Lock</div></div><div><div class="text-2xl copper">📶</div><div class="mt-2">Fast<br>Wi‑Fi</div></div><div><div class="text-2xl copper">❄️</div><div class="mt-2">Central A/C<br>& Heat</div></div><div><div class="text-2xl copper">✨</div><div class="mt-2">Professionally<br>Cleaned</div></div><div><div class="text-2xl copper">🌙</div><div class="mt-2">Quiet Hours<br>10pm–8am</div></div></div></div><div class="md:col-span-2 card rounded-sm p-7"><h3 class="uppercase copper tracking-widest font-semibold">Key Details</h3><ul class="mt-5 space-y-3 text-slate-200"><li>• 3 Bedrooms / 2 Bathrooms</li><li>• Sleeps up to 6 Guests</li><li>• Primary King Suite</li><li>• Full Kitchen</li><li>• Washer & Dryer</li><li>• 65” Smart TV</li><li>• Patio & Grill</li><li>• Free Driveway Parking</li><li>• No Parties</li></ul></div></div></section>
+  <div class="line"></div>
 
-  <!-- Amenities -->
-  <section id="amenities" class="bg-white/60 border-y border-slate-200">
-    <div class="container py-14">
-      <h2 class="text-2xl md:text-3xl font-semibold">Amenities</h2>
-      <p class="text-slate-600 mt-2">Everything you need for a comfortable, easy stay.</p>
+  <section id="amenities" class="container py-16"><div class="text-center"><h2 class="section-title text-3xl md:text-4xl uppercase">Amenities</h2></div><div class="mt-10 grid grid-cols-2 md:grid-cols-7 gap-8 text-center"><div><div class="text-4xl copper">🍽️</div><h3 class="mt-3 font-semibold">Kitchen</h3><p class="mt-2 text-xs text-slate-300">Fully equipped kitchen with essentials</p></div><div><div class="text-4xl copper">📺</div><h3 class="mt-3 font-semibold">Entertainment</h3><p class="mt-2 text-xs text-slate-300">65” Smart TV and streaming</p></div><div><div class="text-4xl copper">📶</div><h3 class="mt-3 font-semibold">Wi‑Fi</h3><p class="mt-2 text-xs text-slate-300">High-speed internet</p></div><div><div class="text-4xl copper">🛏️</div><h3 class="mt-3 font-semibold">Comfort</h3><p class="mt-2 text-xs text-slate-300">Premium linens and pillows</p></div><div><div class="text-4xl copper">🧺</div><h3 class="mt-3 font-semibold">Laundry</h3><p class="mt-2 text-xs text-slate-300">Washer and dryer</p></div><div><div class="text-4xl copper">🪑</div><h3 class="mt-3 font-semibold">Outdoor</h3><p class="mt-2 text-xs text-slate-300">Patio seating and grill</p></div><div><div class="text-4xl copper">🚗</div><h3 class="mt-3 font-semibold">Parking</h3><p class="mt-2 text-xs text-slate-300">Free driveway parking</p></div></div></section>
+  <div class="line"></div>
 
-      <div class="grid md:grid-cols-3 gap-5 mt-6">
-        <div class="bg-white rounded-2xl p-6 shadow-soft ring-muted">
-          <h3 class="font-semibold text-lg">Kitchen & Dining</h3>
-          <ul class="mt-3 space-y-2 text-slate-700">
-            <li>✔️ Fully equipped kitchen</li>
-            <li>✔️ Coffee maker & tea</li>
-            <li>✔️ Dining space</li>
-            <li>✔️ Cookware and essentials</li>
-          </ul>
-        </div>
+  <section id="gallery" class="container py-16"><div class="text-center"><h2 class="section-title text-3xl md:text-4xl uppercase">Gallery</h2></div><div id="galleryGrid" class="mt-8 grid grid-cols-1 md:grid-cols-4 auto-rows-[220px] gap-3"></div><div class="mt-6 text-center"><a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="inline-flex px-8 py-3 rounded-sm btn-outline uppercase tracking-wider text-sm">View Full Gallery</a></div></section>
+  <div class="line"></div>
 
-        <div class="bg-white rounded-2xl p-6 shadow-soft ring-muted">
-          <h3 class="font-semibold text-lg">Comfort & Convenience</h3>
-          <ul class="mt-3 space-y-2 text-slate-700">
-            <li>✔️ Fast Wi‑Fi</li>
-            <li>✔️ Smart TV for streaming</li>
-            <li>✔️ Washer & dryer</li>
-            <li>✔️ Central A/C & heat</li>
-            <li>✔️ Fresh linens & towels</li>
-          </ul>
-        </div>
+  <section id="nearby" class="container py-16"><div class="text-center"><h2 class="section-title text-3xl md:text-4xl uppercase">Nearby Attractions</h2></div><div class="mt-10 grid grid-cols-2 md:grid-cols-7 gap-6 text-center"><div class="border-r border-white/10 px-3"><div class="text-4xl copper">🛍️</div><h3 class="mt-3 text-sm">Tanger Outlets</h3><p class="text-xs text-slate-300">Minutes away</p></div><div class="border-r border-white/10 px-3"><div class="text-4xl copper">🏟️</div><h3 class="mt-3 text-sm">Lamar-Dixon Expo Center</h3><p class="text-xs text-slate-300">Nearby</p></div><div class="border-r border-white/10 px-3"><div class="text-4xl copper">🏛️</div><h3 class="mt-3 text-sm">Houmas House</h3><p class="text-xs text-slate-300">Short drive</p></div><div class="border-r border-white/10 px-3"><div class="text-4xl copper">🎓</div><h3 class="mt-3 text-sm">LSU</h3><p class="text-xs text-slate-300">Easy drive</p></div><div class="border-r border-white/10 px-3"><div class="text-4xl copper">🏙️</div><h3 class="mt-3 text-sm">Baton Rouge</h3><p class="text-xs text-slate-300">Nearby</p></div><div class="border-r border-white/10 px-3"><div class="text-4xl copper">✈️</div><h3 class="mt-3 text-sm">BTR Airport</h3><p class="text-xs text-slate-300">Approx. 35 min</p></div><div class="px-3"><div class="text-4xl copper">⚜️</div><h3 class="mt-3 text-sm">New Orleans</h3><p class="text-xs text-slate-300">Approx. 1 hr</p></div></div></section>
+  <div class="line"></div>
 
-        <div class="bg-white rounded-2xl p-6 shadow-soft ring-muted">
-          <h3 class="font-semibold text-lg">Outdoor & Parking</h3>
-          <ul class="mt-3 space-y-2 text-slate-700">
-            <li>✔️ Free driveway parking</li>
-            <li>✔️ Outside patio seating</li>
-            <li>✔️ Grill available</li>
-            <li>✔️ Self check‑in with smart lock</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="location" class="container py-16"><div class="grid md:grid-cols-2 gap-10 items-start"><div><h2 class="section-title text-3xl md:text-4xl">Location</h2><p class="mt-4 text-slate-200">Approximate location in Gonzales, Louisiana. Exact address is provided after booking.</p><p class="mt-2 text-slate-400 text-sm">Gonzales, LA 70737</p><div class="mt-6 text-slate-200 leading-relaxed"><h3 class="font-semibold copper uppercase tracking-widest text-sm">Directions</h3><p class="mt-3">• From Baton Rouge Metropolitan Airport: approx. 35 minutes via I‑10 E.<br>• From Downtown Baton Rouge: approx. 25 minutes via I‑10 E.<br>• Parking: driveway parking available for guests.</p></div><a href="https://www.google.com/maps?q=30.226,-90.920639&z=16" target="_blank" class="inline-flex mt-6 px-6 py-3 rounded-sm btn-primary font-semibold anim">Open Approximate Location</a></div><div class="aspect-video w-full overflow-hidden border border-white/10 shadow-soft"><iframe class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=30.226,-90.920639&z=16&output=embed"></iframe></div></div></section>
 
-  <!-- Nearby Attractions -->
-  <section id="nearby" class="container py-14">
-    <h2 class="text-2xl md:text-3xl font-semibold">Nearby</h2>
-    <p class="text-slate-600 mt-2">Conveniently located for shopping, events, campus visits, and South Louisiana getaways.</p>
+  <section class="bg-gradient-to-r from-[#b5643d] to-[#d48652]"><div class="container py-10 grid md:grid-cols-3 gap-6 items-center"><div class="md:col-span-2 flex items-center gap-5"><img src="img/logo.jpg" alt="The Esperanza Home Logo" class="hidden sm:block h-20 w-auto opacity-80" onerror="this.style.display='none'"><div><h2 class="serif text-3xl md:text-4xl text-white">Ready for your stay?</h2><p class="mt-2 text-white/90">Experience comfort, convenience, and Southern hospitality at The Esperanza Home.</p></div></div><div class="flex flex-col sm:flex-row md:flex-col gap-3"><a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="inline-flex justify-center px-6 py-4 bg-[#07121a] text-white font-semibold anim">Book on Airbnb</a><a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="inline-flex justify-center px-6 py-4 border border-white/70 text-white font-semibold anim">View on VRBO</a></div></div></section>
 
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-      <div class="p-5 rounded-2xl bg-white shadow-soft ring-muted"><span class="text-xl">🛍️</span><div class="font-semibold mt-2">Tanger Outlets</div><div class="text-slate-600 text-sm">Minutes away</div></div>
-      <div class="p-5 rounded-2xl bg-white shadow-soft ring-muted"><span class="text-xl">🎪</span><div class="font-semibold mt-2">Lamar-Dixon Expo Center</div><div class="text-slate-600 text-sm">Nearby events and shows</div></div>
-      <div class="p-5 rounded-2xl bg-white shadow-soft ring-muted"><span class="text-xl">🐯</span><div class="font-semibold mt-2">LSU</div><div class="text-slate-600 text-sm">Easy drive for games and visits</div></div>
-      <div class="p-5 rounded-2xl bg-white shadow-soft ring-muted"><span class="text-xl">🏙️</span><div class="font-semibold mt-2">Baton Rouge</div><div class="text-slate-600 text-sm">Dining, business, and entertainment</div></div>
-      <div class="p-5 rounded-2xl bg-white shadow-soft ring-muted"><span class="text-xl">🌿</span><div class="font-semibold mt-2">Houmas House</div><div class="text-slate-600 text-sm">Historic gardens and tours</div></div>
-      <div class="p-5 rounded-2xl bg-white shadow-soft ring-muted"><span class="text-xl">✈️</span><div class="font-semibold mt-2">BTR Airport</div><div class="text-slate-600 text-sm">Approx. 35 minutes</div></div>
-    </div>
-  </section>
+  <section id="contact" class="container py-12"><div class="grid md:grid-cols-4 gap-10"><div><div class="flex items-center gap-3"><img src="img/logo.jpg" alt="The Esperanza Home Logo" class="h-16 w-auto" onerror="this.style.display='none'"><div><div class="serif text-3xl">The Esperanza</div><div class="text-[11px] tracking-[.35em] copper uppercase">Home</div></div></div><p class="mt-5 text-sm text-slate-300">A beautifully furnished 3-bedroom retreat in Gonzales, Louisiana. Your home away from home.</p></div><div><h3 class="uppercase copper tracking-widest font-semibold">Contact</h3><p class="mt-4 text-sm text-slate-300">doulosfinancial23@gmail.com</p><p class="mt-2 text-sm text-slate-300">Gonzales, Louisiana</p></div><div><h3 class="uppercase copper tracking-widest font-semibold">Quick Links</h3><div class="mt-4 grid grid-cols-2 gap-2 text-sm text-slate-300"><a href="#about" class="hover:text-[#e18a53]">About</a><a href="#gallery" class="hover:text-[#e18a53]">Gallery</a><a href="#amenities" class="hover:text-[#e18a53]">Amenities</a><a href="#location" class="hover:text-[#e18a53]">Location</a><a href="#contact" class="hover:text-[#e18a53]">Contact</a></div></div><div><h3 class="uppercase copper tracking-widest font-semibold">Book Your Stay</h3><p class="mt-4 text-sm text-slate-300">Find availability and reserve your stay on Airbnb or VRBO.</p><div class="mt-5 flex gap-3"><a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="px-4 py-2 btn-primary text-sm font-semibold">Airbnb</a><a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="px-4 py-2 btn-outline text-sm font-semibold">VRBO</a></div></div></div><div class="mt-10 pt-6 border-t border-white/10 text-center text-xs text-slate-400">© <span id="year"></span> The Esperanza Home. All rights reserved.</div></section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="container py-14">
-    <h2 class="text-2xl md:text-3xl font-semibold">Gallery</h2>
-    <p class="text-slate-600 mt-2">A selection of photos from the property.</p>
-    <div id="galleryGrid" class="mt-6 grid grid-cols-1 md:grid-cols-4 auto-rows-[220px] gap-4"></div>
-  </section>
-
-  <!-- Location & Directions -->
-  <section id="location" class="bg-white/60 border-y border-slate-200">
-    <div class="container py-14">
-      <div class="grid md:grid-cols-2 gap-8 items-start">
-        <div>
-          <h2 class="text-2xl md:text-3xl font-semibold">Location</h2>
-          <p class="mt-3 text-slate-700">Approximate Location</p>
-          <p class="mt-1 text-slate-600 text-sm">Gonzales, LA 70737</p>
-          <div class="mt-4 text-slate-700 leading-relaxed">
-            <h3 class="font-semibold">Directions</h3>
-            <p class="mt-2">• From Baton Rouge Metropolitan Airport: ~35 minutes via I‑10 E.<br/>• From Downtown Baton Rouge: ~25 minutes via I‑10 E.<br/>• Parking: Driveway parking available for guests.</p>
-          </div>
-          <a href="https://www.google.com/maps?q=30.226,-90.920639&z=16" target="_blank" class="inline-flex mt-4 px-4 py-2 rounded-xl bg-slate-900 text-white text-sm font-medium anim">Open in Google Maps</a>
-        </div>
-        <div class="aspect-video w-full rounded-2xl overflow-hidden shadow-soft ring-muted">
-          <iframe class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=30.226,-90.920639&z=16&output=embed"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="container py-14">
-    <div class="grid md:grid-cols-2 gap-8 items-start">
-      <div>
-        <h2 class="text-2xl md:text-3xl font-semibold">Quick Inquiry</h2>
-        <p class="mt-3 text-slate-700">Have dates in mind or a question? Send a quick note and we’ll reply promptly.</p>
-        <form action="https://formspree.io/f/xgvzqngr" method="POST" class="mt-6 bg-white p-6 rounded-2xl shadow-soft ring-muted space-y-4">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <label class="block text-sm">
-              <span class="text-slate-700">Name</span>
-              <input required name="name" type="text" class="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2" placeholder="Jane Doe" />
-            </label>
-            <label class="block text-sm">
-              <span class="text-slate-700">Email</span>
-              <input required name="email" type="email" class="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2" placeholder="you@example.com" />
-            </label>
-          </div>
-          <label class="block text-sm">
-            <span class="text-slate-700">Phone (optional)</span>
-            <input name="phone" type="tel" class="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2" placeholder="(555) 123‑4567" />
-          </label>
-          <label class="block text-sm">
-            <span class="text-slate-700">Message</span>
-            <textarea required name="message" rows="4" class="mt-1 w-full rounded-xl border border-slate-200 px-3 py-2" placeholder="Dates, number of guests, questions…"></textarea>
-          </label>
-          <input type="text" name="_gotcha" class="hidden" aria-hidden="true" />
-          <button type="submit" class="w-full sm:w-auto inline-flex items-center px-5 py-3 rounded-2xl bg-slate-900 text-white font-medium anim">Send</button>
-        </form>
-      </div>
-      <div class="bg-white rounded-2xl p-6 shadow-soft ring-muted">
-        <h3 class="text-lg font-semibold">Booking Links</h3>
-        <p class="mt-2 text-slate-700">Prefer to book on your favorite platform? Choose below:</p>
-        <div class="mt-4 flex flex-col gap-3">
-          <a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-slate-900 text-white font-medium anim">Book on Airbnb</a>
-          <a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-white border border-slate-200 text-slate-900 font-medium anim">View on VRBO</a>
-        </div>
-        <div class="mt-6">
-          <h4 class="font-semibold">House Rules</h4>
-          <ul class="mt-2 list-disc list-inside text-slate-700 space-y-1">
-            <li>No smoking or vaping</li>
-            <li>No parties or events</li>
-            <li>No more than 3 vehicles</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA -->
-  <section class="container py-14">
-    <div class="rounded-3xl bg-slate-900 text-white p-8 md:p-10 shadow-soft">
-      <div class="grid md:grid-cols-3 gap-6 items-center">
-        <div class="md:col-span-2">
-          <p class="uppercase tracking-widest text-xs text-slate-300">Ready for your stay?</p>
-          <h2 class="mt-2 text-2xl md:text-3xl font-semibold">Experience comfort, convenience, and Southern hospitality at The Esperanza Home.</h2>
-          <p class="mt-3 text-slate-300">Book securely through Airbnb or VRBO and enjoy a relaxing stay in Gonzales, Louisiana.</p>
-        </div>
-        <div class="flex flex-col gap-3">
-          <a href="https://www.airbnb.com/rooms/1046386746151558932" target="_blank" class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-white text-slate-900 font-medium anim">Book on Airbnb</a>
-          <a href="https://www.vrbo.com/3866747?dateless=true" target="_blank" class="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-slate-800 border border-slate-700 text-white font-medium anim">View on VRBO</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-white border-t border-slate-200">
-    <div class="container py-10">
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-slate-600">© <span id="year"></span> The Esperanza Home. All rights reserved.<br><span class="text-slate-500">Questions? doulosfinancial23@gmail.com</span></p>
-        <div class="flex items-center gap-3 text-sm">
-          <a href="#about" class="text-slate-600 hover:text-slate-900">About</a>
-          <a href="#amenities" class="text-slate-600 hover:text-slate-900">Amenities</a>
-          <a href="#gallery" class="text-slate-600 hover:text-slate-900">Gallery</a>
-          <a href="#location" class="text-slate-600 hover:text-slate-900">Location</a>
-          <a href="#contact" class="text-slate-600 hover:text-slate-900">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-<script>
-    // Year
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    const exts = ['jpg', 'jpeg', 'JPG', 'JPEG', 'png', 'PNG', 'webp', 'WEBP'];
-
-    function tryLoad(srcs, onSuccess) {
-      if (srcs.length === 0) return;
-      const src = srcs.shift();
-      const img = new Image();
-      img.onload = () => onSuccess(img);
-      img.onerror = () => tryLoad(srcs, onSuccess);
-      img.src = src;
-    }
-
-    function displayGallery() {
-      const gallery = document.getElementById('galleryGrid');
-      if (!gallery) return;
-
-      for (let i = 1; i <= 40; i++) {
-        const candidates = exts.map(ext => `img/${i}.${ext}`);
-
-        tryLoad(candidates, (loadedImg) => {
-          const tile = document.createElement('div');
-          tile.className = "rounded-2xl shadow-soft bg-cover bg-center overflow-hidden";
-
-          // Make the first and fifth photos larger for a more premium gallery layout
-          if (i === 1) tile.className += " md:col-span-2 md:row-span-2";
-          else if (i === 5) tile.className += " md:col-span-2";
-          else tile.className += " md:col-span-1";
-
-          tile.style.backgroundImage = `url('${loadedImg.src}')`;
-          gallery.appendChild(tile);
-        });
-      }
-    }
-
+    const exts=['jpg','jpeg','JPG','JPEG','png','PNG','webp','WEBP'];
+    function tryLoad(srcs,onSuccess){if(!srcs.length)return;const src=srcs.shift();const img=new Image();img.onload=()=>onSuccess(img);img.onerror=()=>tryLoad(srcs,onSuccess);img.src=src;}
+    function displayGallery(){const gallery=document.getElementById('galleryGrid');if(!gallery)return;for(let i=1;i<=40;i++){const candidates=exts.map(ext=>`img/${i}.${ext}`);tryLoad(candidates,(loadedImg)=>{const tile=document.createElement('div');tile.className='gallery-tile shadow-soft bg-cover bg-center';if(i===1)tile.className+=' md:col-span-2 md:row-span-2';else if(i===5)tile.className+=' md:col-span-2';else tile.className+=' md:col-span-1';tile.style.backgroundImage=`url('${loadedImg.src}')`;gallery.appendChild(tile);});}}
     displayGallery();
-
-    (function setHero() {
-      const hero = document.querySelector('.hero-img');
-      const coverCandidates = exts.map(ext => `img/cover.${ext}`);
-      tryLoad([...coverCandidates], (img) => {
-        hero.style.backgroundImage = `url('${img.src}')`;
-      });
-    })();
+    (function setHero(){const hero=document.querySelector('.hero-img');const coverCandidates=exts.map(ext=>`img/cover.${ext}`);tryLoad([...coverCandidates],(img)=>{hero.style.backgroundImage=`linear-gradient(90deg,rgba(7,18,26,.98) 0%,rgba(7,18,26,.88) 32%,rgba(7,18,26,.45) 68%,rgba(7,18,26,.22) 100%), url('${img.src}')`;});})();
   </script>
-  
 </body>
 </html>
